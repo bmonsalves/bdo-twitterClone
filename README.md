@@ -4,7 +4,7 @@
 
 ##deploy a dispositivo real o genymotion
 
-cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
-cordova local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-media.git
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git  
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-media.git  
 
 cordova run android

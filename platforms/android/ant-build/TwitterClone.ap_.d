@@ -37,6 +37,9 @@
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/plugins \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/css \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/logo.png \
+/home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/twitter_logo.png \
+/home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/setting.png \
+/home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/puntos.png \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/js/index.js \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/plugins/org.apache.cordova.file \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/plugins/org.apache.cordova.device \
