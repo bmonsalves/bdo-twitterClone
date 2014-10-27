@@ -3,17 +3,38 @@ var app = {
     initialize: function() {
         this.bindEvents();
     },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
+
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        
+        var sendUser = document.getElementById('sendUser');
+        sendUser.addEventListener('click', app.sendDataUser, false);
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
+
+    sendDataUser: function(){
+        var user = document.getElementById('user').value;
+        var pass = document.getElementById('pass').value;
+        var data = {
+            "user": user,
+            "password": pass
+        };
+
+        xmlhttp = new XMLHttpRequest();
+        var url = "http://192.168.1.34:4567/api/users";
+        xmlhttp.open("POST", url, true);
+        xmlhttp.setRequestHeader("Content-type", "application/json");
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4) {
+                alert(xmlhttp.responseText);
+            }
+        };
+        
+        xmlhttp.send(JSON.stringify(data));
+        
+        
+
+    },
+
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
