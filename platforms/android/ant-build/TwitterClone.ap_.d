@@ -36,6 +36,8 @@
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/js \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/plugins \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/css \
+/home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/register.html \
+/home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/back.png \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/logo.png \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/twitter_logo.png \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/setting.png \

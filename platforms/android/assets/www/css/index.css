@@ -94,6 +94,20 @@ h1 {
 
 }
 
+.link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.back{
+    height: 100%;
+    width: 20px;
+    background:url(../img/back.png) no-repeat center top;
+    position: relative;
+    float: left;
+
+}
+
 .icon{
     height: 100%;
     width: 50px;
@@ -127,7 +141,36 @@ h1 {
 
 .content{
     width: 100%;
-    height: 200px;
+    height: 100%;
+}
+
+.condiciones{
+    width: 100%;
+    height: 100%;
+    background-color: #e8edf1;
+    border-top: 1px solid #b0b0b0;
+}
+
+.txtCondicion{
+    margin: 10px 15px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.check{
+    width: 92%;
+    margin: 20px 15px;
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    top: -25px;
+    left: 30px;
+}
+
+.rel{
+    color: #2b7bb9;
 }
 
 input.holo {

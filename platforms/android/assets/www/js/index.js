@@ -24,10 +24,11 @@ var app = {
         xmlhttp.open("POST", url, true);
         xmlhttp.setRequestHeader("Content-type", "application/json");
         xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4) {
-            alert(xmlhttp.responseText);
-        }
-    };
+            if (xmlhttp.readyState == 4) {
+                alert(xmlhttp.responseText);
+            }
+        };
+        
         xmlhttp.send(JSON.stringify(data));
         
         
