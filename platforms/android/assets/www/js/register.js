@@ -1,34 +1,42 @@
-var app = {
-    // Application Constructor
+var reg = {
+    // reglication Constructor
     initialize: function() {
         this.bindEvents();
     },
 
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        
-        var sendUser = document.getElementById('sendUser');
-        sendUser.addEventListener('click', app.sendDataUser, false);
+
+        var register = document.getElementById('register');
+        register.addEventListener('click', reg.sendRegisterUser, false);
     },
 
-    sendDataUser: function(){
+    sendRegisterUser: function(){
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
         var user = document.getElementById('user').value;
         var pass = document.getElementById('pass').value;
+        //alert(name+" "+email+" "+user+" "+pass);
+        
         var data = {
+            "name": name,
+            "email": email,
             "user": user,
             "password": pass
         };
 
+
         xmlhttp = new XMLHttpRequest();
-        var url = "http://192.168.1.34:4567/api/users/login";
+        var url = "http://192.168.1.34:4567/api/users/register";
         xmlhttp.open("POST", url, true);
         xmlhttp.setRequestHeader("Content-type", "application/json");
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4) {
-                
+        
                 var respuesta = JSON.parse(xmlhttp.responseText);
 
-                if (respuesta.codigo == "200") {
+                if (respuesta.codigo == "201") {
                     window.location.href="inicio.html";
                     alert(respuesta.token);
                 }else{
@@ -37,12 +45,14 @@ var app = {
             }
         };
         
-        xmlhttp.send(JSON.stringify(data));      
+        xmlhttp.send(JSON.stringify(data));
+        
+        
 
     },
 
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        reg.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

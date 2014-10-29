@@ -20,18 +20,24 @@ var app = {
         };
 
         xmlhttp = new XMLHttpRequest();
-        var url = "http://192.168.1.34:4567/api/users";
+        var url = "http://192.168.1.34:4567/api/users/login";
         xmlhttp.open("POST", url, true);
         xmlhttp.setRequestHeader("Content-type", "application/json");
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4) {
-                alert(xmlhttp.responseText);
+                
+                var respuesta = JSON.parse(xmlhttp.responseText);
+
+                if (respuesta.codigo == "200") {
+                    window.location.href="inicio.html";
+                    alert(respuesta.token);
+                }else{
+                    alert(respuesta.mensaje);
+                }
             }
         };
         
-        xmlhttp.send(JSON.stringify(data));
-        
-        
+        xmlhttp.send(JSON.stringify(data));      
 
     },
 

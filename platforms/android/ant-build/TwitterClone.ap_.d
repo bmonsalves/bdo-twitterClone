@@ -53,6 +53,7 @@
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/inicio/menu.png \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/inicio/imagen.png \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/img/inicio/foto.png \
+/home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/js/register.js \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/js/index.js \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/plugins/org.apache.cordova.file \
 /home/xfce/phonegap_projects/twitterclone/platforms/android/assets/www/plugins/org.apache.cordova.device \
