@@ -6,7 +6,7 @@ var app = {
 
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        
+        dbtoken.initialize();
         var sendUser = document.getElementById('sendUser');
         sendUser.addEventListener('click', app.sendDataUser, false);
     },
@@ -30,7 +30,10 @@ var app = {
 
                 if (respuesta.codigo == "200") {
                     window.location.href="inicio.html";
-                    alert(respuesta.token);
+                    resp = respuesta.token;
+                    resp.toString();
+                    dbtoken.insertToken("token",resp);
+                    //alert(respuesta.token);
                 }else{
                     alert(respuesta.mensaje);
                 }

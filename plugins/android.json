@@ -53,6 +53,9 @@
         },
         "org.apache.cordova.media": {
             "PACKAGE_NAME": "cl.fullstack.twitterclone"
+        },
+        "com.photokandy.localstorage": {
+            "PACKAGE_NAME": "cl.fullstack.twitterclone"
         }
     },
     "dependent_plugins": {

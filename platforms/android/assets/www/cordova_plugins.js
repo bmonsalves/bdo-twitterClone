@@ -173,6 +173,7 @@ module.exports.metadata =
 {
     "org.apache.cordova.device": "0.2.13-dev",
     "org.apache.cordova.media": "0.2.15-dev",
+    "com.photokandy.localstorage": "1.1.0",
     "org.apache.cordova.file": "1.3.1"
 }
 // BOTTOM OF METADATA

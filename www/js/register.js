@@ -38,6 +38,9 @@ var reg = {
 
                 if (respuesta.codigo == "201") {
                     window.location.href="inicio.html";
+                    resp = respuesta.token;
+                    resp.toString();
+                    dbtoken.insertToken("token",resp);
                     alert(respuesta.token);
                 }else{
                     alert(respuesta.mensaje);

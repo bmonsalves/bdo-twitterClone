@@ -27,4 +27,5 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.NetworkManager" />
     </feature>
+    <plugin name="Storage" value="org.apache.cordova.Storage" />
 </widget>

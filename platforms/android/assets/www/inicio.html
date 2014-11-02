@@ -18,7 +18,8 @@
             <div class="posicion mail"></div>
             <div class="posicion user"></div>
             <div class="posicion search"></div>
-            <div class="posicion menu"></div>        
+            <div class="posicion menu" id="setMenu"></div>
+            <div class="cerrar" id ="cerrar"><p>Cerrar sesion</p></div>    
         </header>
 
         <section class="content">
@@ -37,9 +38,10 @@
         </footer>
         
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/inicio.js"></script>
+        <script type="text/javascript" src="js/common/dbtoken.js"></script>
         <script type="text/javascript">
-            app.initialize();
+            inicio.initialize();
         </script>
     </body>
 </html>

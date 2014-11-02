@@ -63,3 +63,20 @@
     background-size: 25px;
     margin-top: 10px;
 }
+
+.cerrar{
+    width: 200px;
+    height: 35px;
+    z-index: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: center;
+    background-color: #e8edf1;
+    display:none;
+}
+
+.cerrar p{
+    height: 100%;
+    margin: 7px auto;
+}

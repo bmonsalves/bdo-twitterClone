@@ -1,0 +1,19 @@
+{
+    "version": "1.1.0",
+    "name": "com.photokandy.localstorage",
+    "cordova_name": "Persistent Local Storage",
+    "description": "Persists localStorage during \"pause\" events.",
+    "license": "MIT",
+    "keywords": [
+        "localStorage",
+        " persist",
+        " pause",
+        " resume "
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=2.9.0"
+        }
+    ]
+}
