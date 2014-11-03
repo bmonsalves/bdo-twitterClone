@@ -6,7 +6,7 @@ var dbtoken = {
     },
 
     populateDB: function(tx) {
-        tx.executeSql('DROP TABLE IF EXISTS token');
+        //tx.executeSql('DROP TABLE IF EXISTS token');
         tx.executeSql('CREATE TABLE IF NOT EXISTS token(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, token)');
     },
 
@@ -15,7 +15,7 @@ var dbtoken = {
     },
 
     successCB: function() {
-        alert("bd cargada");
+        console.log("bd cargada");
     },
 
     insertToken: function(columns,values){
@@ -34,8 +34,25 @@ var dbtoken = {
     },
 
     querySuccess: function(tx, results){
-        alert(results.rows.length);
-        alert(results.rows.item(0).token);
+
+        if (results.rows.length>0) {
+            window.location.href="inicio.html";
+            alert(results.rows.item(0).token);
+        }
+    },
+
+    deleteToken: function(){
+        var db = window.openDatabase("twitter", "1.0", "twitterclone", 10000000);
+        
+        db.transaction(function (tx) {
+            tx.executeSql('DELETE FROM token', [], dbtoken.deleteSuccess, dbtoken.errorCB);
+        });
+
+    },
+
+    deleteSuccess: function(){
+        alert("Cerrar Sesion");
+        window.location.href="index.html";
     }
 
 };

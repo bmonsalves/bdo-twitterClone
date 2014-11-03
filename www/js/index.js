@@ -7,6 +7,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         dbtoken.initialize();
+        dbtoken.selectToken();
         var sendUser = document.getElementById('sendUser');
         sendUser.addEventListener('click', app.sendDataUser, false);
     },

@@ -6,15 +6,22 @@ var inicio = {
 
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        dbtoken.selectToken();
+        //dbtoken.selectToken();
 
         var setMenu = document.getElementById('setMenu');
         setMenu.addEventListener('click', inicio.settingMenu, false);
+
+        var cerrar = document.getElementById('cerrar');
+        cerrar.addEventListener('click', inicio.cerrar, false);
     },
 
     settingMenu: function(){
         var obj = document.getElementById('cerrar');
         obj.style.display = (obj.style.display=='none') ? 'block' : 'none';
+    },
+
+    cerrar: function(){
+        dbtoken.deleteToken();
     },
 
     
